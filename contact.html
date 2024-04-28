@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="nl-BE">
+
   <!-- HEAD -->
   <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Home</title>
+    <title>Settings</title>
     
     <!-- Reset css -->
     <link href="./css/reset.css" rel="stylesheet">
@@ -36,7 +37,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
 
-        <a href="/index.html" class="navbar-brand"><img src="/assets/images/raspberry-pi-logo.png" alt="Raspberry Pi" width="50"></a>
+        <a href="/index.html" class="navbar-brand"><img src="/assets\images\raspberry-pi-logo.png" alt="Raspberry Pi" width="50"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -65,54 +66,72 @@
           </ul>
         </div>
 
-        <a href="/contact.html"><button class="btn text-light btn-outline-secondary" type="button">Contact</button></a>
+        <a href="/contact.html"><button class="btn text-light btn-outline-secondary active" type="button">Contact</button></a>
       
       </div>
     </nav>
-
-    <div class="text-center m-5 webtitle text-uppercase">
-      <h1 class="fw-bold">Home</h1>
-      <br>
-      <img src="assets/images/Raspberry-pi-home.jpg" alt="Raspberry-pi" width="40%" class="">
-      <img src="assets/images/arduino-home.jpg" alt="Raspberry-pi" width="40%" class="">
-      </div>
-
   </header>
 
-    <!-- Quote -->
-    <div class="text-center m-3 webtitle text-secondary">
-    <blockquote>
-      <i>
-      "Arduino en Raspberry Pi zijn de Lego-blokken van de moderne uitvinders en makers,
-      <br>waarmee je alles kunt bouwen, van eenvoudige gadgets tot complexe,
-      <br>geautomatiseerde systemen die de wereld kunnen veranderen."
-      </i>
-    </blockquote>
-    </div>
-    
-    <!-- Main -->
-    <main>
-        <br>
-        <h1 class="text-center">Sensoren en Smart Home Oplossingen</h1>
+<!-- Main -->
+<main class="container-md">
+  <form novalidate action="#" method="post">
+      <fieldset class="row g-3 mb-3">
+        <legend class="fs-6 fw-bolder pt-3">PERSONAL</legend>
 
-        <p class="text-center p-5">Transformeer je huis in een intelligente omgeving met de kracht van Arduino en Raspberry Pi. Deze veelzijdige platforms bieden alles wat je nodig hebt om je eigen smart home-systeem te bouwen, van eenvoudige automatiseringstaken tot geavanceerde, gepersonaliseerde oplossingen.</p>
-        
-        <h2 class="text-center">Intelligente Sensoren</h2>
-        <p class="text-center p-5">Begin met het integreren van verschillende sensoren om real-time data over je leefomgeving te verzamelen. Temperatuur, vochtigheid, beweging, en lichtsensoren kunnen allemaal worden gebruikt om je huis comfortabeler en energiezuiniger te maken. Arduino en Raspberry Pi maken het eenvoudig om deze sensoren te koppelen en te programmeren voor automatische reacties op veranderende omstandigheden.</p>
-        
-        <h2 class="text-center">Automatisering en Controle</h2>
-        <p class="text-center p-5">Met eenvoudige scripts kun je verlichting, verwarming, en andere apparaten automatisch bedienen op basis van sensorgegevens of vooraf ingestelde schema's. Stel bijvoorbeeld de verwarming in om te activeren wanneer de temperatuur onder een bepaald niveau daalt, of gebruik lichtsensoren om de verlichting aan te passen aan het natuurlijke daglicht in de kamer.</p>
-        
-    </main>
+        <div class="col-md-6">
+          <label for="voornaam">Name <span>*</span></label><br>
+          <input class="form-control" type="text" id="voornaam" required> 
+        </div>
 
-    <!-- Aside -->
-    <aside class="">
-    </aside>
+        <div class="col-md-6">
+          <label for="achternaam">Last name <span>*</span></label><br>
+          <input class="form-control" type="text" id="achternaam" required> 
+        </div>
+
+        <div class="col-md-6">
+          <label for="mobiel">Mobile</label><br>
+          <input class="form-control" type="tel" id="mobiel" placeholder="0412 34 56 78">                   
+        </div>
+
+        <div class="col-md-6">
+          <label for="geboortedatum">Birthdate</label><br>
+          <input class="form-control" type="date" id="geboortedatum">                   
+        </div>
+      </fieldset>
+
+
+      <fieldset class="row g-3 mb-3 mt-3">
+        <legend class="fs-6 fw-bolder pt-3">E-MAIL</legend>
+
+        <div class="form-floating">
+          <input class="form-control" type="email" id="e-mail" placeholder="" required> 
+          <label for="e-mail" class="form-label">Email <span>*</span></label>
+        </div>
+        
+      </fieldset>
+
+
+      <fieldset class="row g-3 mb-3 mt-3">
+        <legend class="fs-6 fw-bolder pt-3">MESSAGE</legend>
+
+        <div class="col-md-12">
+          <label for="message">Message <span>*</span></label><br>
+          <textarea class="form-control" id="message" rows="4" placeholder="Enter your message here..."></textarea> 
+        </div>
+
+      </fieldset>
+
+      <div class="col">
+        <button type="submit" class="btn btn-dark text-light">Send</button>
+      </div>
+    </form>
 
     <!-- Footer -->
     <footer class="text-center container-fluid">&copy; 2023-2024<br>All rights reserved.
     </footer>
-    
-  </body>
 
-</html>
+</main>
+
+
+
+</body>

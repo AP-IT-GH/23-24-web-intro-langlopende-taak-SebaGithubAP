@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Dashboard</title>
+    
+    <!-- Reset css -->
+    <link href="./css/reset.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- JavaScript: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Eigen geschreven css voor jouw html-bestand -->
+    <link rel="stylesheet" href="./css/style.css">
+    
+  </head>
+  
+  <body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+
+        <a href="/index.html" class="navbar-brand"><img src="/assets\images\raspberry-pi-logo.png" alt="Raspberry Pi" width="50"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="/diensten.html" class="nav-link">Dashboard</a></li>
+
+            <li class="nav-item"><a href="/settings.html" class="nav-link">Settings</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="btn nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+             
+              <ul class="nav-item dropdown-menu">
+                <li><a class="dropdown-item active" href="/diensten/humidity.html">Humidity</a></li>
+                <li><a class="dropdown-item" href="/diensten/temp.html">Temperature</a></li>
+                <li><a class="dropdown-item" href="/diensten/light.html">Lightning</a></li>
+                <li><a class="dropdown-item" href="/diensten/audio.html">Audio</a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item" href="/log-in.html">Log out</a></li>
+              </ul>
+
+            </li>
+
+          </ul>
+        </div>
+
+        <a href="/contact.html"><button class="btn text-light btn-outline-secondary" type="button">Contact</button></a>
+      
+      </div>
+    </nav>
+  </header>
+
+    <!-- Aside en main -->
+    <div class="container ms-0">
+      <div class="row">
+
+    <!-- Aside -->
+      <aside class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark" id="sidebar">
+                    <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 min-vh-100">
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                            
+                            <li class="nav-item">
+                                <a href="/diensten.html" class="nav-link align-middle px-0">
+                                    <i class="bi bi-house-door"></i> Dashboard</a>
+                            </li>
+
+                            <li>
+                                <a href="/diensten/humidity.html" class="nav-link px-0 align-middle active">
+                                    <i class="bi bi-moisture"></i>&nbsp;Humidity&nbsp;</a>
+
+                            </li>
+
+                            <li>
+                                <a href="/diensten/temp.html" class="nav-link px-0 align-middle">
+                                    <i class="bi bi-thermometer-half"></i>Temperature</a>
+                            </li>
+
+                            <li>
+                              <a href="/diensten/light.html" class="nav-link px-0 align-middle">
+                                  <i class="bi bi-lightbulb"></i> Lightning</a>
+                            </li>
+
+                            <li>
+                              <a href="/diensten/audio.html" class="nav-link px-0 align-middle">
+                                  <i class="bi bi-speaker"></i> Audio</a>
+                            </li>
+
+                            <li>
+                              <a href="/settings.html" class="nav-link px-0 align-middle">
+                                  <i class="bi bi-gear"></i> Settings</a>
+                            </li>
+                        
+                        
+                            <li>
+                              <a href="/profile.html" class="nav-link px-0 align-middle">
+                                  <i class="bi bi-person"></i> Profile</a>
+                            </li>
+
+                            <li>
+                              <button class="btn btn-secondary d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </button>
+                            </li>
+                      </ul>
+                </div>
+      </aside>
+
+    <main class="col-md-9 mt-4">
+      <div class="container">
+        <div class="text-center m-5 webtitle text-uppercase align-items-center">
+          <h1 class="fw-bold">Humidity</h1>
+        </div>
+        <div class="container text-center mt-4">
+          <h2>Functionaliteit en Toepassingen</h2>
+          <p>Een luchtvochtigheidssensor gekoppeld aan een microcontroller zoals Arduino of Raspberry Pi kan gebruikt worden om de luchtvochtigheid binnen een bepaald bereik te monitoren en te reguleren. Dit is bijzonder nuttig in:</p>
+        </div>
+          <ul>
+              <li>Klimaatbeheersing in woningen en kantoren</li>
+              <li>Industriële processen waar vocht een kritieke factor is</li>
+              <li>Landbouw en tuinbouw om optimale groeiomstandigheden te garanderen</li>
+              <li>Gezondheidszorg, waarbij luchtvochtigheid invloed kan hebben op patiënten en apparatuur</li>
+          </ul>
+ 
+      
+
+      </div>
+    </main>
+
+  </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="text-center container-fluid">&copy; 2023-2024<br>All rights reserved.
+    </footer>
+    
+  </body>
+  
+</html>
