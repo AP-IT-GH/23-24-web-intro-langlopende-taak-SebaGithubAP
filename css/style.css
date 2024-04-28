@@ -34,3 +34,9 @@ a, a:hover {
 .red {
   color: red;
 }
+
+@media screen and (max-width: 799px) {
+  #sidebar {
+      display:none;
+  }
+}
