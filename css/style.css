@@ -35,6 +35,7 @@ a, a:hover {
   color: red;
 }
 
-#map { 
-  height: 180px;
+#map {
+  height: 40%;
+  width: 40%;
 }

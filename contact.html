@@ -124,30 +124,18 @@
           </div>
         </form>
       </div>
-            <!-- Map Column -->
-            <div class="col-md-6">
-              <div class="p-3 m-3" id="map"></div>
-            </div>
+
+      <!-- Map -->
+      <div class="col-md-6">
+        <div class="p-3 m-3" id="map"></div>
+      </div>
+
     </div>
   </main>
     
   <!-- Footer -->
   <footer class="text-center container-fluid">&copy; 2023-2024<br>All rights reserved.</footer>
 
-  <!-- Leaflet map script -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      var map = L.map('map').setView([50.8503, 4.3517], 25);
-
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      }).addTo(map);
-
-      L.marker([50.8503, 4.3517]).addTo(map)
-        .bindPopup('Random markering, Belgium')
-        .openPopup();
-    });
-  </script>
-
+  <script src="./js/leaflet.js"></script>
 </body>
 </html>
