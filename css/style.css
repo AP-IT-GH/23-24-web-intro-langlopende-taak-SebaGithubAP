@@ -35,20 +35,14 @@ a, a:hover {
   color: red;
 }
 
-/* mapStyle.css */
 #map {
-  height: 50vh; /* 50% van de viewport hoogte */
+  height: 50vh; 
   width: 100%;
+  flex-grow: 1;
 }
 
-/* Zorg ervoor dat het main-element de volledige hoogte van de viewport gebruikt */
 main {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-/* De map-sectie moet alle beschikbare ruimte innemen */
-#map {
-  flex-grow: 1;
 }
