@@ -1,12 +1,16 @@
-
 document.addEventListener("DOMContentLoaded", function() {
-var map = L.map('map').setView([50.8503, 4.3517], 15);
-
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
-
-L.marker([50.8503, 4.3517]).addTo(map)
-    .bindPopup('Random markering, Belgium')
-    .openPopup();
-});
+    var map = L.map('map').setView([48.23009, 6.41616], 15);
+  
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+  
+    // Marker
+    var marker = L.marker([48.23009, 6.41616]).addTo(map)
+      .bindPopup('Random makering')
+      .openPopup();
+  
+    // Rectangle
+    var bounds = [[48.23041, 6.4155], [48.22991, 6.41675]];
+    var rectangle = L.rectangle(bounds, {color: "red", weight: 1}).addTo(map);
+  });
