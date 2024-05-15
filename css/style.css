@@ -35,8 +35,6 @@ a, a:hover {
   color: red;
 }
 
-@media screen and (max-width: 799px) {
-  #sidebar {
-      display:none;
-  }
+#map { 
+  height: 180px;
 }
