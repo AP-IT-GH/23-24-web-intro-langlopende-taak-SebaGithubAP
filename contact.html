@@ -30,10 +30,10 @@
   <!-- Javascript: Leaflet -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
-  <!-- Leaflet JS -->
+  <!-- Leaflet eigen JS -->
   <script src="./js/leaflet.js" defer></script>
 
-  <!-- Eigen geschreven css voor jouw html-bestand -->
+  <!-- Eigen geschreven CSS -->
   <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -43,6 +43,8 @@
 
   <!-- Header -->
   <header>
+
+    <!-- Nav -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a href="index.html" class="navbar-brand"><img src="assets/images/raspberry-pi-logo.png" alt="Raspberry Pi" width="50"></a>
@@ -69,6 +71,7 @@
         <a href="contact.html"><button class="btn text-light btn-outline-secondary active" type="button">Contact</button></a>
       </div>
     </nav>
+
   </header>
 
   <!-- Main -->
@@ -76,7 +79,7 @@
     <div class="row">
 
 
-      <!-- Form Column -->
+      <!-- Form -->
       <div class="col-md-6">
         <form novalidate action="#" method="post">
           <fieldset class="row g-3 mb-3">
@@ -102,8 +105,8 @@
           <fieldset class="row g-3 mb-3 mt-3">
             <legend class="fs-6 fw-bolder pt-3">E-MAIL</legend>
             <div class="form-floating">
-              <input class="form-control" type="email" id="e-mail" placeholder="" required> 
               <label for="e-mail" class="form-label">Email <span>*</span></label>
+              <input class="form-control" type="email" id="e-mail" placeholder="E-mail" required> 
             </div>
           </fieldset>
 
@@ -114,6 +117,17 @@
               <textarea class="form-control" id="message" rows="4" placeholder="Enter your message here..."></textarea> 
             </div>
           </fieldset>
+
+
+          <legend class="fs-6 fw-bolder pt-3">Send your message to: </legend>
+          <div class="form-check form-check-inline mb-2">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+            <label class="form-check-label" for="inlineRadio1">Webdesigner</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">Admin</label>
+          </div>
 
           <div class="col">
             <button type="submit" class="btn btn-dark text-light">Send</button>
