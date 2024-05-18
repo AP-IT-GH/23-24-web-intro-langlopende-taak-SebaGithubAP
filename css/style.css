@@ -41,13 +41,27 @@ a, a:hover {
   flex-grow: 1;
 }
 
+@media (max-width: 992px) {
+  .navbar-nav {
+    text-align: center;
+  }
+}
+
+.navbar-toggler-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 figure {
   position: relative;
   margin: 10px;
 }
+
 .small-caption {
   font-size: 0.8rem;
 }
+
 .figcaption {
   position: absolute;
   bottom: 10px;
@@ -59,6 +73,7 @@ figure {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
+
 figure:hover .figcaption {
   opacity: 1;
 }
