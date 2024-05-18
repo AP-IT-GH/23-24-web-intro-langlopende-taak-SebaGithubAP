@@ -129,29 +129,23 @@
   </header>
 
   <!-- Main -->
-    <main class="">
+    <main class="container">
 
-      <!-- Table -->
-      <table class="table table-striped">
-        <caption>Persoonlijke informatie</caption>
+      <!-- Responive table -->
+      <div class="table-responsive">
 
-        <!-- Row 1 -->
-        <tr>
-            <th>Achternaam</th>
-            <th>Voornaam</th>
-            <th>E-mail</th>
-            <th>Mobiel nummer</th>
-        </tr>
+        <table class="table table-striped">
+          <caption>Persoonlijke informatie</caption>
 
-        <!-- Row 2-->
-        <tr>
-            <td>Voorbeeld</td>
-            <td>Naam</td>
-            <td>voorbeeld@naam.com</td>
-            <td>123-456-7890</td>
-        </tr>
+          <thead>Gebruikers</thead>
+          
+          <tbody id="user-table-body">
+            <script src="js/random-user-api.js"></script>
+          </tbody>
 
-      </table>
+        </table>
+
+    </div>
 
     </main>
 
