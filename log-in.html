@@ -42,35 +42,89 @@
         <a href="index.html" class="navbar-brand">
           <img src="assets/images/raspberry-pi-logo.png" alt="Raspberry Pi" width="50">
         </a>
+
         <button class="navbar-toggler navbar-toggler-center" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
           <span class="navbar-toggler-icon"></span>
         </button>
   
         <div class="collapse navbar-collapse justify-content-center" id="navmenu">
+
           <ul class="navbar-nav text-center">
+
+            <!-- Basic options navbar-->
             <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="diensten.html" class="nav-link">Dashboard</a></li>
             <li class="nav-item"><a href="settings.html" class="nav-link">Settings</a></li>
+
+            <!-- Dropdown option navbar -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="diensten/humidity.html">Humidity</a></li>
-                <li><a class="dropdown-item" href="diensten/temp.html">Temperature</a></li>
-                <li><a class="dropdown-item" href="diensten/light.html">Lightning</a></li>
-                <li><a class="dropdown-item" href="diensten/audio.html">Audio</a></li>
+
+                <!-- Humidity -->
+                <li>
+                  <a href="diensten/humidity.html" class="dropdown-item">
+                    <i class="bi bi-moisture"></i> Humidity
+                  </a>
+                </li>
+
+                <!-- Temperature -->
+                <li>
+                  <a href="diensten/temp.html" class="dropdown-item">
+                    <i class="bi bi-thermometer-half"></i> Temperature
+                  </a>
+                </li>
+
+                <!-- Lightning -->
+                <li>
+                  <a href="diensten/light.html" class="dropdown-item">
+                    <i class="bi bi-lightbulb"></i> Lightning
+                  </a>
+                </li>
+
+                <!-- Audio -->
+                <li>
+                  <a href="diensten/audio.html" class="dropdown-item">
+                    <i class="bi bi-speaker"></i> Audio
+                  </a>
+                </li>
+
+                <!-- Profile -->
+                <li>
+                  <a href="profile.html" class="dropdown-item">
+                    <i class="bi bi-person"></i> Profile
+                  </a>
+                </li>
+
+                <!-- Settings -->
+                <li>
+                  <a href="settings.html" class="dropdown-item">
+                    <i class="bi bi-gear"></i> Settings
+                  </a>
+                </li>
+                
                 <hr class="dropdown-divider">
-                <li><a class="dropdown-item" href="log-in.html">Log out</a></li>
+
+                <!-- Log out -->
+                <li>
+                  <a href="index.html" class="dropdown-item">
+                    <i class="bi bi-box-arrow-right"></i> Log out
+                  </a>
+                </li>
+
               </ul>
             </li>
           </ul>
         </div>
   
+        <!-- Contact button -->
         <a href="contact.html" class="ms-auto">
           <button class="btn text-light btn-outline-secondary" type="button">Contact</button>
         </a>
         
       </div>
     </nav>
+
   </header>
 
     <!-- Main -->
