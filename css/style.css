@@ -1,3 +1,4 @@
+/* General make up body & HTML */
 html, body {
   box-sizing: border-box;
   background-color: #fff;
@@ -10,43 +11,41 @@ html, body {
   font-weight: bold;
 }
 
-a, a:hover {
-  text-decoration: none;
-  color: #ca8446;
-}
-
+/* Comes from old file, used for '*' on contact page */
 .raspberry, span{
   color: #E30B5D
 }
 
+/* Custom webtitle font */
 .webtitle{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* Makes the cards stay in line */
 .card {
   display:inline-block;
 }
 
-.green {
-  color: green;
+/* To make article text normal instead of bold */
+article {
+  font-weight: normal;
 }
 
-.red {
-  color: red;
-}
-
+/* Defines the map size */
 #map {
   height: 50vh; 
   width: 100%;
   flex-grow: 1;
 }
 
+/* Responsive nav-bar so it's centered */
 @media (max-width: 992px) {
   .navbar-nav {
     text-align: center;
   }
 }
 
+/* Centers the navbar hamburger */
 .navbar-toggler-center {
   position: absolute;
   left: 50%;
@@ -58,10 +57,12 @@ figure {
   margin: 10px;
 }
 
+/* Small figcaption text */
 .small-caption {
   font-size: 0.8rem;
 }
 
+/* Fancy hover figcaption */
 .figcaption {
   position: absolute;
   bottom: 10px;
@@ -74,6 +75,7 @@ figure {
   transition: opacity 0.3s ease;
 }
 
+/* Fancy hover figcaption */
 figure:hover .figcaption {
   opacity: 1;
 }
