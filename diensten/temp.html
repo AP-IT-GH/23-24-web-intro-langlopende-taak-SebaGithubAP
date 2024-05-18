@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
     <!-- Eigen geschreven css voor jouw html-bestand -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     
   </head>
   
@@ -123,40 +123,49 @@
       </div>
     </nav>
 
+    <!-- H1 -->
+    <h1 class="fw-bold text-center m-3 webtitle text-uppercase">Temperatuur</h1>
+
   </header>
 
+  <!-- Main -->
+  <main class="">
+    
+    <div class="container">
+      <div class="row justify-content-center">
 
-    <div class="container ms-0">
-      <div class="row">
-
-    <main class="col-md-9 mt-4">
-      <div class="container">
-
-        <div class="text-center m-5 webtitle text-uppercase align-items-center">
-          <h1 class="fw-bold">Temperature</h1>
+        <!-- Photo Temperature-->
+        <div class="col-12 col-sm-6 col-md-4">
+          <figure>
+            <img src="../assets/images/temp-room.png" alt="Temperature room" class="img-fluid">
+            <figcaption class="figcaption small-caption">&copy; OpenAI, ChatGPT</figcaption>
+          </figure>
         </div>
 
-        <div class="container text-center mt-4">
-          <h2>Functionaliteit en Toepassingen van Temperatuursensoren</h2>
-          <p>Een temperatuursensor gekoppeld aan een microcontroller zoals Arduino of Raspberry Pi kan gebruikt worden om de temperatuur binnen een bepaald bereik te monitoren en te reguleren. Dit is essentieel voor:</p>
-        </div>
-          <ul>
-              <li>Klimaatbeheersing in gebouwen, om een comfortabele leef- en werkomgeving te creëren</li>
-              <li>Procescontrole in industriële toepassingen waar temperatuurbeheersing cruciaal is</li>
-              <li>Voedselveiligheid, om te zorgen dat voedsel opgeslagen en vervoerd wordt bij veilige temperaturen</li>
-              <li>Elektronische apparaten, om oververhitting te voorkomen en de levensduur te verlengen</li>
-          </ul>
-
-      
-        
       </div>
-    </main>
+    </div>
 
-  </div>
-</div>
+    <!-- Text -->
+    <article class="container">
+
+        <h2 class="text-center mt-4 mb-4">Functionaliteit en Toepassingen van Temperatuursensoren</h2>
+        <p>Een temperatuursensor gekoppeld aan een microcontroller zoals Arduino of Raspberry Pi kan gebruikt worden om de temperatuur binnen een bepaald bereik te monitoren en te reguleren. Dit is essentieel voor:</p>
+
+        <!-- List -->
+        <ul>
+            <li>Klimaatbeheersing in gebouwen, om een comfortabele leef- en werkomgeving te creëren</li>
+            <li>Procescontrole in industriële toepassingen waar temperatuurbeheersing cruciaal is</li>
+            <li>Voedselveiligheid, om te zorgen dat voedsel opgeslagen en vervoerd wordt bij veilige temperaturen</li>
+            <li>Elektronische apparaten, om oververhitting te voorkomen en de levensduur te verlengen</li>
+        </ul>
+
+      </article>
+
+  </main>
 
     <!-- Footer -->
-    <footer class="text-center container-fluid">&copy; 2023-2024<br>All rights reserved.
+    <footer class="text-center container-fluid">
+      &copy; Grad. IoT 2023-2024 - Sebastiaan Van der Veken<br>All rights reserved.
     </footer>
     
   </body>
