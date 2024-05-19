@@ -20,11 +20,11 @@
     <!-- JavaScript: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
     
-    <!-- Bootstrap icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    
     <!-- Eigen geschreven css voor jouw html-bestand -->
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Random User API JavaScript -->
+    <script src="js/random-user-api.js" defer></script>
     
   </head>
   
@@ -41,6 +41,7 @@
           <img src="assets/images/raspberry-pi-logo.png" alt="Raspberry Pi" width="50">
         </a>
 
+        <!-- Hamburger icon -->
         <button class="navbar-toggler navbar-toggler-center" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -134,18 +135,20 @@
       <!-- Responive table -->
       <div class="table-responsive">
 
-        <table class="table table-striped">
-          <caption>Persoonlijke informatie</caption>
+        <table class="table">
+          <caption>Persoonlijke informatie gebruikers</caption>
 
-          <thead>Gebruikers</thead>
+          <thead>
+            <tr>
+              <th>Gebruikers</th>
+            </tr>
+          </thead>
           
-          <tbody id="user-table-body">
-            <script src="js/random-user-api.js"></script>
-          </tbody>
+          <tbody id="user-table-body"></tbody>
 
         </table>
 
-    </div>
+      </div>
 
     </main>
 
