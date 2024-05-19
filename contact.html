@@ -49,6 +49,7 @@
           <img src="assets/images/raspberry-pi-logo.png" alt="Raspberry Pi" width="50">
         </a>
 
+        <!-- Hamburger icon -->
         <button class="navbar-toggler navbar-toggler-center" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -137,7 +138,7 @@
   </header>
 
   <!-- Main -->
-  <main class="container-md">
+  <main class="container">
     <div class="row">
 
       <!-- Form -->
@@ -149,25 +150,25 @@
 
           <!-- First name -->
           <div class="col-md-6">
-            <label for="voornaam">Voornaam <span>*</span></label><br>
+            <label for="voornaam">Voornaam <span>*</span></label>
             <input class="form-control" type="text" id="voornaam" required> 
           </div>
 
           <!-- Last name -->
           <div class="col-md-6">
-            <label for="achternaam">Achternaam <span>*</span></label><br>
+            <label for="achternaam">Achternaam <span>*</span></label>
             <input class="form-control" type="text" id="achternaam" required> 
           </div>
 
           <!-- Mobile nr -->
           <div class="col-md-6">
-            <label for="mobiel">Mobiel nummer</label><br>
+            <label for="mobiel">Mobiel nummer</label>
             <input class="form-control" type="tel" id="mobiel" placeholder="0412 34 56 78">                   
           </div>
 
           <!-- Birthday -->
           <div class="col-md-6">
-            <label for="geboortedatum">Geboorte datum</label><br>
+            <label for="geboortedatum">Geboorte datum</label>
             <input class="form-control" type="date" id="geboortedatum">                   
           </div>
 
@@ -185,7 +186,7 @@
         <fieldset class="row g-3 mb-3 mt-3">
           <legend class="fs-6 fw-bolder pt-3">Boodschap</legend>
           <div class="col-md-12">
-            <label for="message">Message <span>*</span></label><br>
+            <label for="message">Message <span>*</span></label>
             <textarea class="form-control" id="message" rows="4" placeholder="Typ je bericht hier..."></textarea> 
           </div>
         </fieldset>
@@ -218,7 +219,6 @@
     <!-- Map -->
     <legend class="fs-6 fw-bold text-uppercase pt-3">Onze locatie: </legend>
     <div class="mt-3 mb-3" id="map"></div>
-
 
   </main>
     
