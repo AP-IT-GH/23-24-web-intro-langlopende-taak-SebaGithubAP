@@ -16,7 +16,7 @@
 
 - De student past HTML toe voor de constructie van een webpagina en hedendaagse webfunctionaliteiten.
 - De student hanteert een correcte syntax en semantiek bij de structurele opbouw in HTML | CSS | JavaScript.
-- De student gebruikt de juiste bestandsformaten voor beeld, video en audio voor gebruik op het web.
+- De student gebruikt de juiste bestandsformaten voor beeld, video en audio voor gebruik op het web
 - De student documenteert de constructie van zijn/haar website op heldere wijze.
 - De student realiseert een website in HTML en CSS op basis van een gegeven wireframe/mockup.
 - De student host/structureert websites op een webserver.
